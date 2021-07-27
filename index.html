@@ -1,0 +1,489 @@
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+        <script src="particles.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+        <style>
+        #particles-js{
+            background-color:#cbba83  ;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        #head{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        nav{
+            background-color: #caae53;
+            opacity: 0;
+        }
+        .page-footer{
+            background-color: #caae53;
+            padding-top:0px;
+        }
+        .header{
+            color:#FFFFFF;
+            text-align: center;
+        }
+        .row{
+            text-align: center;
+            background-color: #FFFFFF;
+            padding-bottom:25px;
+            margin-bottom:40px;
+        }
+        .projects{
+            background-color:#FFFFFF;
+        }
+        h1{
+            color:#FFFFFF;
+            text-align: center;
+        }
+        .carousel{
+            height:200px;
+        }
+        .carousel > a{
+            color:#000000;
+        }
+        .collection{
+            text-align: left;
+        }
+        .collapsible-body{
+            background-color:#FFFFFF;
+        }
+        .collpsible-link{
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .popout{
+            margin-bottom:0px;
+            padding-bottom:50px;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                <a href="#!" class="brand-logo center">criggs.tech</a>
+
+                </div>
+            </nav>
+        </div>
+        <div id="head">
+            <div class="container header">
+                <img src="img/c&a.jpg" class="circle z-depth-4" style="border:solid white 5px;" height="300vh">
+               <h1 id="name">Caleb Riggs</h1><br>
+               <img src="img/down.gif" height=75px style="opacity:.9;" id="scrollDown">
+            </div>
+        </div>
+        <div id="particles-js"></div>
+        <h1 id="main">About</h1>
+        <div class="row">
+            <div class="col s12 m12 l4">
+                <h3>Bio</h3>
+                <p>
+                    If you couldn't tell by the heading above my name is Caleb Riggs.
+                    I currently work as a cyber security engineer at iQor. The job responsibilities seem to change every other day, but there's a common theme.
+                    I get to help make our company more secure! Some days this looks like programming a new script to automate integration with our multi factor platform, or connect with our AV to run native scripts and go threat hunting.
+                    Other days it's designing a response procedure for security events detected in our SIEM tool, and even building that event detection into our SIEM tool.
+                    And even other days it's understanding new vulnerabilities, their impact to our organization, and working with stakeholders to get them remediated.
+                    While I may not know what tomorrow holds, I'll probably be able to hack out a solution.
+                </p>
+            </div>
+            <div class="col s12 m12 l4">
+                <h3>Skills</h3>
+                <p>Here are some of the skills I've picked up over the years:</p>
+                <div class="carousel">
+                    <a class="carousel-item" href="#one!">
+                        <h6 class="careousel-head">Programming</h6>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>R</li>
+                            <li>MIPS</li>
+                            <li>VeriLog</li>
+                        </ul>
+                    </a>
+                    <a class="carousel-item" href="#one!">
+                            <h6 class="careousel-head">Web Dev</h6>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                                <li>Node</li>
+                                <li>Mongo</li>
+                                <li>SQL</li>
+                            </ul>
+                        </a>
+                    <a class="carousel-item" href="#two!">
+                        <h6 class="careousel-head">Cyber Security</h6>
+                        <ul>
+                            <li>Splunk</li>
+                            <li>MetaSploit</li>
+                            <li>Nessus</li>
+                            <li>Nmap</li>
+                            <li>WireShark</li>
+                            <li>DUO Admin</li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+            <div class="col s12 m12 l4">
+                <h3>Work Experience</h3>
+                <ul class="collection">
+                  <li class="collection-item avatar">
+                      <a target="new" href="//iqor.com"><img src="img/iqor.png" alt="" class="circle company"></a>
+                      <span class="title">Cyber Security Engineer</span>
+                      <p>iQor</p><p>June 2018 - Current</p>
+                  </li>
+                    <li class="collection-item avatar">
+                        <a target="new" href="//floridapoly.edu"><img src="img/poly.jpg" alt="" class="circle company"></a>
+                        <span class="title">Digital Forensics Research</span>
+                        <p>Florida Polytechnic University</p><p>December 2017 - May 2018</p>
+                    </li>
+                    <li class="collection-item avatar">
+                        <a target="new" href="//directnic.com"><img src="img/directnic.png" alt="" class="circle company"></a>
+                        <span class="title">Software Development Intern</span>
+                        <p>Directnic<p><p>May - August 2016</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h1 style="margin-bottom:50px;">Projects</h1>
+        <div class="projects">
+        <div class="row">
+          <div class="col m12 l4">
+              <h5>NesRest</h5>
+              <p>
+                  This is a python library designed to make interacting with the nessus API easy and conveinent.
+                  The library consists of a single python class that has three main sections.
+                  The first section is custom functions that are designed for making simple operations easier to completed.
+                  Operations like downloaded a file can be done in one step instead of several. The next section is full API integration.
+                  Functions that simply interact with the Nessus API and return logical results.
+                  The final section is functions designed to do the interaction work such as get and post.
+              </p>
+              <a href="https://github.com/criggs626/nesrest" target="new">
+                  <img height=8% src="img/git.svg">
+              </a>
+          </div>
+            <div class="col m12 l4">
+                <h5>FraudTweets</h5>
+                <p>
+                    The purpose of this program is to detect fraud on twitter. It does this by targeting a specific companies
+                    handle (for example @sprint). It then will read any twitter user that complains to @sprint and begins
+                    monitoring for people responding to that tweet that are offering help. If they are not an official
+                    supported account then they are marked as fraudulent. It does this by running a NodeJS backend and using Twitter's API.
+                    Relevant information is stored in a noSQL mongo database.
+                </p>
+                <a href="https://github.com/criggs626/fraud" target="new">
+                    <img height=8% src="img/git.svg">
+                </a>
+            </div>
+            <div class="col m12 l4">
+                <h5>metaVisualizer</h5>
+                <p>
+                    Image metadata is an important piece of information in the investigation process.
+                    It can tell you information about where and when the picture was taken to what device the picture was taken on.
+                    This project helps pull relevant metadata out of a folder of images. Once the metadata was retrieved
+                    it was displayed in a user friendly fashion. To help insights be drawn we even also implemented
+                    the google maps API in the javafx front end.
+                </p>
+                <a href="https://github.com/criggs626/metaVisualizer" target="new">
+                    <img height=8% src="img/git.svg">
+                </a>
+            </div>
+        </div>
+        <ul class="collapsible popout">
+            <li>
+                <div class="collapsible-header"><i class="material-icons">subject</i><h6>IoT Device Discovery for Incidence Response</h6></div>
+                <div class="collapsible-body">
+                    <span>
+                        <p>IoT devices are not fully adapted to incidence response techniques owing to the fact that the current incidence response tools and procedures are not able to meet the heterogeneity and distributed nature of the IoT infrastructures. As a result, gathering, examining and analyzing potential traces of any incident from IoT environments poses a challenge to incident responders. This paper presents a tool that will provide useful information to an investigator about the IoT devices on some specific network. The developed tool will help in discovering IoT devices on a network that is able to support IoT investigative capabilities with a degree of certainty. The paper is linked below.</p>
+                        <div class="collpsible-link">
+                            <a href="https://ieeexplore.ieee.org/document/8686717" target="new">
+                                <i class="material-icons">subject</i>
+                            </a>
+                        </div>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">subject</i><h6>Image Mapping through Metadata</h6></div>
+                <div class="collapsible-body">
+                    <span>
+                        <p>This is the research component of the metaVisualizer listed above.
+                          Image metadata is an important piece of information in any digital investigation process. It can tell you information about where a picture was taken, what time it was taken, what device took the picture, and so much more. In this research paper we have designed and developed a java application to help aid investigators by pulling relevant metadata out of a set of images inside a folder. Once this metadata was retrieved, we displayed it in a user friendly fashion with the goal being to help an investigator draw insight into the pictures that were taken. One method for helping insight be drawn easier was implementing the google maps API in a javafx front end. The paper is linked below</p>
+                        <div class="collpsible-link">
+                            <a href="https://ieeexplore.ieee.org/document/8556664" target="new">
+                                <i class="material-icons">subject</i>
+                            </a>
+                        </div>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">subject</i><h6>Survey of Connected Vehicle Vulnerability Assesment</h6></div>
+                <div class="collapsible-body">
+                    <span>
+                        <p>With the growing ease of connecting a vehicle and other technologies to
+                        the Internet, the need for security is growing. In a connected vehicle, there are many
+                        different connections and therefore many different systems can be exploited. In this
+                        paper, we shed the light on the security of several features of connected vehicles to
+                        determine whether or not they are vulnerable to attacks and identify possible
+                        mitigations. We focus on four features, namely, Bluetooth, OBD (On Board
+                        Diagnostics) System, Infotainment System, and OTA (Over the air). The paper is linked below.</p>
+                        <div class="collpsible-link">
+                            <a href="http://www.jtle.net/index.php?m=content&c=index&a=show&catid=48&id=205" target="new">
+                                <i class="material-icons">subject</i>
+                            </a>
+                        </div>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">android</i><h6>Baby Saver</h6></div>
+                <div class="collapsible-body">
+                    <span>
+                        <p>The main purpouse of this project is to help save the lives of infants left in cars,
+                        however its application does not end there. It can also be applied to most anything that
+                        someone may leave in a car. Our goal was accomplished by using an arduino and various sensors to detect
+                        the presence of precious cargo in a car, and an android application which interfaced using BLE to notify a user.</p>
+                        <div class="collpsible-link">
+                            <a href="https://github.com/criggs626/Baby-Saver" target="new">
+                                <img height=8% src="img/git.svg">
+                            </a>
+                        </div>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">web</i><h6>Smart Ticket</h6></div>
+                <div class="collapsible-body">
+                    <span>
+                        <p>
+                            Smart Ticket is a smart IT ticketing system built for a design class at Florida Polytechnic University.
+                            The backend uses nodeJS to interact with Gmail and a SQL database allowing users to email in tickets and an
+                            agent to respond to the tickets in a timely manner. The system uses machine learning to try and automatically resolve
+                            tickets sent in by users. It can also pull a from a list of frequently asked questions to resolve issues.
+                        </p>
+                        <div class="collpsible-link">
+                            <a href="https://github.com/criggs626/smartTicket" target="new">
+                                <img height=8% src="img/git.svg">
+                            </a>
+                        </div>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">web</i><h6>PdfToJpg</h6></div>
+                <div class="collapsible-body">
+                    <span>
+                        <p>This is a web application built for directnic to help users convert pdf to jpg images.
+                        It uses a PHP backend and imagemagick to convert all the pages of a pdf to jpg, png, or gif images.
+                        A pdf that has multiple pages will automatically convert to seperate images and zip for the user to download.
+                        The front end is designed using bootstrap and custom CSS to fit the design specifications.</p>
+                        <div class="collpsible-link">
+                            <a href="https://github.com/criggs626/pdftojpg" target="new">
+                                <img height=8% src="img/git.svg">
+                            </a>
+                        </div>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">web</i><h6>nameTumbler</h6></div>
+                <div class="collapsible-body">
+                    <span>
+                        <p>Name Tumbler is a web application built for directnic it acts as the key to unlocking the best domains for you.
+                        It allows you to enter as many words as you like seperated by commas and then seperate
+                        more words on a new line and combines the words as much as possible.
+                        While combining the site will also search to see if that specific combination is available for purchase
+                        or if it is already registered. The majority of this project is written using backbone in the client side JavaScript.</p>
+                        <div class="collpsible-link">
+                            <a href="https://github.com/criggs626/nameTumbler" target="new">
+                                <img height=8% src="img/git.svg">
+                            </a>
+                        </div>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">email</i><h6>GoPhish Implementation</h6></div>
+                <div class="collapsible-body">
+                    <span>
+                        <p>While working at iQor I was asked to look into finding an open source program to run security training by Phishing.
+                        After researching several options I was asked to implement GoPhish for the company. I was able to setup the enviroment
+                        for GoPhish and customize the opensource project to better fit the company's needs. I also trained the operations
+                        department on how to use the software and created documentation for them to use.</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">directions_car</i><h6>Autonomous Robotics Systems</h6></div>
+                <div class="collapsible-body">
+                    <span>
+                        <p>In my final semester at Florida Polytechnic University I joined a class called Autonomous Robotics Systems. In
+                        this course we built and programmed a one tenth scale autonomous vehichle. This vehichle used ROS to communicate
+                        amongst various sensors such as LiDar, Camera, and IMU. Computer Vision was often done on images to help determine
+                        the best path for the car to go and drive itself.</p>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+            <p>Look there's even a footer down here. Thanks for scrolling all the way.
+            <a class="grey-text text-lighten-4 right" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">For your dedication</a></p>
+            </div>
+        </div>
+    </footer>
+        <script>
+            function scroll(){
+                document.getElementById("main").scrollIntoView({behavior: "smooth"})
+            }
+            $(document).on('scroll', function (e) {
+                $('nav').css('opacity', ($(document).scrollTop() / 500));
+            });
+            $(document).ready(function(){
+                $('.carousel').carousel();
+            });
+            $(document).ready(function(){
+                $('.collapsible').collapsible();
+            });
+            data={
+              "particles": {
+                "number": {
+                  "value": 60,
+                  "density": {
+                    "enable": true,
+                    "value_area": 800
+                  }
+                },
+                "color": {
+                  "value": "#81c784"
+                },
+                "shape": {
+                  "type": "circle",
+                  "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                  },
+                  "polygon": {
+                    "nb_sides": 5
+                  },
+                  "image": {
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
+                  }
+                },
+                "opacity": {
+                  "value": 0.5,
+                  "random": false,
+                  "anim": {
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                  }
+                },
+                "size": {
+                  "value": 4.005992965476349,
+                  "random": true,
+                  "anim": {
+                    "enable": false,
+                    "speed": 40,
+                    "size_min": 0.1,
+                    "sync": false
+                  }
+                },
+                "line_linked": {
+                  "enable": true,
+                  "distance": 236.75550259247285,
+                  "color": "#519657",
+                  "opacity": 0.7734013084687446,
+                  "width": 1.7362070190114671
+                },
+                "move": {
+                  "enable": true,
+                  "speed": 6,
+                  "direction": "none",
+                  "random": false,
+                  "straight": false,
+                  "out_mode": "out",
+                  "bounce": false,
+                  "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                  }
+                }
+              },
+              "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                  "onhover": {
+                    "enable": true,
+                    "mode": "grab"
+                  },
+                  "onclick": {
+                    "enable": true,
+                    "mode": "repulse"
+                  },
+                  "resize": true
+                },
+                "modes": {
+                  "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                      "opacity": 1
+                    }
+                  },
+                  "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 8,
+                    "speed": 3
+                  },
+                  "repulse": {
+                    "distance": 200,
+                    "duration": 0.4
+                  },
+                  "push": {
+                    "particles_nb": 4
+                  },
+                  "remove": {
+                    "particles_nb": 2
+                  }
+                }
+              },
+              "retina_detect": true
+            }
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                data.particles.number.value=20;
+            }
+            particlesJS('particles-js', data, function() {
+                console.log('callback - particles.js config loaded');
+            });
+            $("#scrollDown").on('click',scroll);
+        </script>
+    </body>
+</html>
